@@ -1,15 +1,15 @@
 package main
 
 import (
-	"net/http"
+	"encoding/xml"
 	"fmt"
 	"io/ioutil"
-	"encoding/xml"
+	"net/http"
 )
 
 type Person struct {
-	Name string
-	Age int
+	Name           string
+	Age            int
 	ServerResponse bool
 }
 
@@ -25,6 +25,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", index);
+	http.HandleFunc("/", index)
 	http.ListenAndServe(":8080", nil)
 }

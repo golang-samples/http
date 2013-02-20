@@ -1,16 +1,16 @@
 package main
 
 import (
-	"net/http"
-	"encoding/xml"
 	"bytes"
+	"encoding/xml"
 	"fmt"
 	"io/ioutil"
+	"net/http"
 )
 
 type Person struct {
 	Name string
-	Age int
+	Age  int
 }
 
 func main() {

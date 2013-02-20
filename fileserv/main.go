@@ -1,10 +1,10 @@
 package main
 
 import (
-    "net/http"
+	"net/http"
 )
 
 func main() {
-    http.Handle("/", http.FileServer(http.Dir("static")))
-    http.ListenAndServe(":8080", nil)
+	http.Handle("/", http.FileServer(http.Dir("static")))
+	http.ListenAndServe(":8080", nil)
 }

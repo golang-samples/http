@@ -2,8 +2,8 @@ package main
 
 import (
 	"io"
-	"os"
 	"net/http"
+	"os"
 )
 
 func main() {
